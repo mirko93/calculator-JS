@@ -50,7 +50,7 @@ function multiply() {
 function divide() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult -= enteredNumber;
+    currentResult /= enteredNumber;
     createAndWriteOutput('/', initialResult, enteredNumber);
     writeToLog('DIVIDE', initialResult, enteredNumber, currentResult);
 }
